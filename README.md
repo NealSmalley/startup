@@ -2,10 +2,10 @@
 ## Elevator Pitch
 Have you ever been searching for a job, but you don't know what would be best suited for your schedule, life style or major? Well this Job Configurator is created to address this problem. The user puts in their major, prefered hours and interests and the application will give the result that is best suited for the user.
 ## Design
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+![Avatars](https://github.com/NealSmalley/startup/assets/54277322/f42531ba-e8b5-482a-9e77-50cb77b2c4fb)
 ## Key features
 - login over HTTPS
-- The ability to input information![Avatars](https://github.com/NealSmalley/startup/assets/54277322/f42531ba-e8b5-482a-9e77-50cb77b2c4fb)
+- The ability to input information
 
 - Returns a job based on the inputs
 - The ability to re-edit input information after job result
