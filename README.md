@@ -11,23 +11,23 @@ Have you ever been searching for a job, but you don't know what would be best su
 - The ability to re-edit input information after job result
 - The ability to save job results
 ## Technologies
-- HTML - Two HTML structured pages. The first for the login. The second will be where you input your information for the job results.
+- HTML - Three HTML structured pages. The first for the login. The second will be where you input your information for the job results(Career machine) and third results of search).
 - CSS - An application that looks clean and professional. It easy to use on computer and phone.
 - JavaScript - Login, applying information inputs, displaying job result
 - Service
   - Login
-  - inputing information
-  - returning results
+  - Career Machine
+  - Results
 - DB/Login - Register, login information, store input choices and job result to database.
 - WebSocket - They can share their job results with other users.
 - React - This application will be particially constructed in React.
 ## HTML deliverable
 For this deliverable I will structure it using HTML.
-- HTML pages - Two HTML pages for loging in and inputing information.
-- Links - The login page links to the inputing information page.
-- Images - Cartoon image of individual that represents your avatar.
-- DB/Login - Input box and submit button of login page. The login information will be sent to the database. The inputed other inputed information will also be sent to the database.
-- WebSocket - The user can show their job result with another user.
+- HTML pages - Three HTML pages for loging in, career machine page and results page.(Done)
+- Links - The login page links to the career machine page and the resutls page.(Done)
+- Images - Cartoon image of individual that represents your avatar.(Done)
+- DB/Login - Input box and submit button of login page. The login information will be sent to the database. The inputed other inputed information will also be sent to the database.(Done: placeholder for login. No database yet.)
+- WebSocket - The user can show their job result with another user.(Done: placeholder for WebSocket)
 ## CSS deliverable
 - Header, footer, and content
 - Navigation elements - buttons and input boxes with borders.
