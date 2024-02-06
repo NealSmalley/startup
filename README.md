@@ -27,6 +27,7 @@ For this deliverable I will structure it using HTML.
 - Links - The login page links to the career machine page and the resutls page.(Done)
 - Images - Cartoon image of individual that represents your avatar.(Done)
 - DB/Login - Input box and submit button of login page. The login information will be sent to the database. The inputed other inputed information will also be sent to the database.(Done: placeholder for login. No database yet.)
+- 3rd party service - will be the job results from BYU employment website.
 - WebSocket - The user can show their job result with another user.(Done: placeholder for WebSocket)
 ## CSS deliverable
 - Header, footer, and content
