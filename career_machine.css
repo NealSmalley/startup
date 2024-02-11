@@ -29,3 +29,37 @@ ul a:link, a:visited {
     background-size: 10px;
     border-radius: 5%;
 }
+
+input[type=text], select {
+    padding: 10px 20px;
+    background-color: #E5E7ED;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+  }
+
+  footer {
+    position: fixed;
+    top: 90%;
+    left:10%;
+    margin-top: -50px;
+    margin-left: -100px;
+  }
+  .avatar {
+    position: fixed;
+    top: 50%;
+    left: 35%;
+    margin-top: -50px;
+    margin-left: -100px;
+  }
