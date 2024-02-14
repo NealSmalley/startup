@@ -96,7 +96,7 @@ ul a:link, a:visited {
     height: 20px;
     background-image: linear-gradient(90deg, #DDDCE4, #EFEFF1);
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     border-style: solid;
     border-color: #FAF5F2;
     border-radius: 15px;
@@ -112,16 +112,20 @@ ul a:link, a:visited {
   
   .slider_background {
     background-image: linear-gradient(180deg, #C2C0CB, white);
-    border-radius: 8px;
-    height: 20px;
     width: 99.5%;
+    height: 20px; /* Adjust based on desired track height */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
     margin-left: .3%;
   }
   .slider_border {
       background-image: linear-gradient(180deg, white, #C2C0CB);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 22px; /* Ensure this accommodates the slider's height */
       border-radius: 10px;
-      height: 22px;
-      padding-top: 2px;
   }
 
   .extra_controls {
