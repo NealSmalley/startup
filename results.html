@@ -28,76 +28,94 @@
     </nav>
     </header>
     <hr></hr>
-    <h5>Employer</h5>
-    <p>Placeholder for Employer name(BYU)</p>
-    <p> In demand skills for this Company:</p>
-        <li>Coding</li>
-        <li>Programming</li>
-        <li>Css</li>
-    <h5> Select one of the Common Jobs at Employer location</h5>
-        <li>BYU Electrical Engineering Department</li>
-            <li>$salary</li>
-        <li>BYU Computer Engineering Department</li>
-            <li>$salary</li>
-        <li>BYU Cyber Security Department</li>
-            <li>$salary</li>
-        <hr></hr>
-        <embed src="girl4.svg" width="300" height="380" embedborder="0" typle="img/svg+xml"/>
-        <hr></hr>
-    <h5>Study plan</h6>
-        <li>Freshman</li>
-        <li>Sophomore</li>
-        <li>Junior</li>
-        <li>Senior</li>
-        <hr></hr>
+    <div class="first_third">
+      <h2>Employer:</h2>
+      <p>Placeholder for Employer name(BYU)</p>
+      <p> In demand skills for this Company:</p>
+          <li>Coding</li>
+          <li>Programming</li>
+          <li>Css</li>
+      <h4> Select one of the Common Jobs at Employer location</h4>
+          <li>BYU Electrical Engineering Department</li>
+              <li>$salary</li>
+          <li>BYU Computer Engineering Department</li>
+              <li>$salary</li>
+          <li>BYU Cyber Security Department</li>
+              <li>$salary</li>
+    </div>
+        <div class="avatar">
+          <embed src="girl4.svg" width="300" height="380" embedborder="0" typle="img/svg+xml"/>
+        </div>
+    <div class="study_plan">
+      <p>Study plan</p>
+          <li>Freshman</li>
+          <li>Sophomore</li>
+          <li>Junior</li>
+          <li>Senior</li>
+          <hr></hr>
+    </div>
       <div class="other_users">
-        Friends Career results:
-        <span class="place-holder-user">Unknown Friend</span>
+              <p>Friends Career results:</p>
+              <span class="place-holder-user">Unknown Friend</span>
+            <table>
+              <thead>
+                  <tr>
+                      <th>Result Number</th>
+                      <th>Name</th>
+                      <th>Career Result</th>
+                      <th>Time</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>1</td>
+                      <td>Neal</td>
+                      <td>Firefighter</td>
+                      <td>5pm</td>
+                  </tr>
+                  <tr>
+                      <td>7</td>
+                      <td>Jim</td>
+                      <td>Taco Bell employee</td>
+                      <td>2pm</td>
+                  </tr>
+                  <tr>
+                      <td>5</td>
+                      <td>Joe</td>
+                      <td>Supreme leader</td>
+                      <td>3pm</td>
+                  </tr>
+              </tbody>
+          </table>
+            <hr></hr>
       </div>
-      <table>
-        <thead>
-            <tr>
-                <th>Result Number</th>
-                <th>Name</th>
-                <th>Career Result</th>
-                <th>Time</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Neal</td>
-                <td>Firefighter</td>
-                <td>5pm</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>Jim</td>
-                <td>Taco Bell employee</td>
-                <td>2pm</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Joe</td>
-                <td>Supreme leader</td>
-                <td>3pm</td>
-            </tr>
-        </tbody>
-    </table>
-      <hr></hr>
-      <p>Flexibility</p>
-      <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      <div class="extra_controls">
+        <p>Flexibility</p>
+        <div class="slidecontainer">
+          <div class="slider_border">
+            <div class="slider_background">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+          </div>
+        </div>
+        <p>Pay/Hour</p>
+        <div class="slidecontainer">
+          <div class="slider_border">
+            <div class="slider_background">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+          </div>
+        </div>
+        <p>Transferability</p>
+        <div class="slidecontainer">
+          <div class="slider_border">
+            <div class="slider_background">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+          </div>
+        </div>
+        <div>
       </div>
-      <p>Pay/Hour</p>
-      <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-      </div>
-      <p>Transferability</p>
-      <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-      </div>
-      <div>
         <form form method="get" action="career_machine.html">
           <button>Restart</button>
         </form>
