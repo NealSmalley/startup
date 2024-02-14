@@ -1,9 +1,7 @@
 body{
     background-color: #E5E7ED;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    color: #74767C;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: black;
+    color: black;
 }
 
 
@@ -143,6 +141,22 @@ ul a:link, a:visited {
   .extra_controls p {
     margin: 5px;
 
+  }
+
+  button{
+    background-color:#d4d4d5;
+    border: 2px;
+    border-style: solid;
+    border-color:black;
+    border-radius: 10px;
+    color: black;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
   }
 
   footer {
