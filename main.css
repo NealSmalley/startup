@@ -65,8 +65,27 @@ input[type=text], select {
 
   footer {
     position: fixed;
-    top: 90%;
+    top: 95%;
     left:10%;
     margin-top: -50px;
     margin-left: -100px;
+  }
+
+  /*@media screen and (max-width: 1100px) {
+    .logo{
+      display:none;
+    }
+  }*/
+  @media screen and (max-width: 1100px) {
+    ul.nav-bar{
+      display: flex;
+      flex-direction: column;
+    }
+    footer {
+      position: fixed;
+      top: 90%;
+      left:20%;
+      margin-top: -50px;
+      margin-left: -100px;
+    }
   }
