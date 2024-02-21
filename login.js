@@ -1,8 +1,12 @@
   const nameEl = document.getElementById("login").addEventListener("click", function(event){
   const nameElValue = document.getElementById("name").value
-  localStorage.setItem("userName", nameElValue); // Corrected: Directly use the value
+  const database = [];
+  let database_string = JSON.stringify(database);
+  localStorage.setItem("database", database_string);
+  localStorage.setItem("userName", nameElValue); 
+
   console.log(nameElValue);
-  window.location.href = "career_machine.html"; // Ensure this redirection is intentional
+  window.location.href = "career_machine.html"; 
   });
   
 
