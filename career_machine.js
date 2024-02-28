@@ -9,19 +9,19 @@
   window.location.href = "results.html"; 
   });
 
+function login() {
+    var x = localStorage.getItem("userName");
+    document.getElementById("career_machine_question").innerHTML = "Where would you like to work " + x +"?";
+    console.log(x);
+    const nameEl = document.querySelector("#question").value;
+    console.log(nameEl);
+  }
+
+login();
+
 
 //function login() {
-    //const nameEl = document.querySelector("#name");
-    //localStorage.setItem("userName", nameEl.value);
-    //window.location.href = "career_machine.html";
-  //}
-
-//function login() {
-//    var x = localStorage.getItem("userName");
-//    document.getElementById("career_machine_question").innerHTML = "Where would you like to work " + x +"?";
-//    console.log(x);
-    //const nameEl = document.querySelector("#question").value;
-    //console.log(nameEl);
-//  }
-
-//login();
+//  const nameEl = document.querySelector("#name");
+//  localStorage.setItem("userName", nameEl.value);
+//  window.location.href = "career_machine.html";
+//}
