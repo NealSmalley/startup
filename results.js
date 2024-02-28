@@ -25,6 +25,13 @@ function login() {
     } else {
         console.log("not found")
     }
+    const employmentElValue = "engineer"
+
+    const storedUserInfoString = localStorage.getItem("user_info");
+    const user_info = storedUserInfoString ? JSON.parse(storedUserInfoString) : {};
+    user_info.job = employmentElValue; 
+    const updatedUserInfoString = JSON.stringify(user_info);
+    localStorage.setItem("user_info", updatedUserInfoString);
     
   }
 login();
