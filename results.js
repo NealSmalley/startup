@@ -14,3 +14,17 @@ setInterval(() => {
     chatText3.innerHTML =
       `<div>${time}pm</div>` + chatText3.innerHTML;
   }, 5000);
+
+function login() {
+    var x = localStorage.getItem("user_info");
+    if (x) {
+        const userInfo = JSON.parse(x);
+        const y = userInfo.employer;
+        document.getElementById("employer").innerHTML = y;
+        console.log(x);
+    } else {
+        console.log("not found")
+    }
+    
+  }
+login();
