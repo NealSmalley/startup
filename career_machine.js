@@ -1,21 +1,11 @@
   const employmentEl = document.getElementById("employment").addEventListener("click", function(event){
   const employmentElValue = document.getElementById("question").value
-  const database = [];
-  database.push(employmentElValue)
-  let database_string = JSON.stringify(database);
-
 
   const storedUserInfoString = localStorage.getItem("user_info");
   const user_info = storedUserInfoString ? JSON.parse(storedUserInfoString) : {};
-//  user_info['employer'] = JSON.stringify(employmentElValue);
-  user_info.employer = JSON.stringify(employmentElValue); // Add or update the email property
+  user_info.employer = employmentElValue; 
   const updatedUserInfoString = JSON.stringify(user_info);
   localStorage.setItem("user_info", updatedUserInfoString);
-
-
-  localStorage.setItem("database", database_string);
-  localStorage.setItem("userName", employmentElValue); 
-  console.log(employmentElValue);
   window.location.href = "results.html"; 
   });
   
