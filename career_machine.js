@@ -8,7 +8,7 @@
   localStorage.setItem("user_info", updatedUserInfoString);
   window.location.href = "results.html"; 
   });
-  
+
 
 //function login() {
     //const nameEl = document.querySelector("#name");
