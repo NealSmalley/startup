@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="results.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <!-- Menu is a semantic alternative to <ul> that represents an interaction -->
+            <menu>
+            <ul class="nav-bar">
+              <li>
+                  <a href="index.html">
+                      <embed src="logo_cleaned.svg" width="300" height="180" embedborder="0" typle="img/svg+xml"/>
+                  </a>
+            </li>
+              <li><a href="index.html"><span class="underline">Home</span></a></li>
+            <li><a href="career_machine.html"><span class="underline">Career Machine</span></a></li>
+            <li><a href="results.html"><span class="underline">Results</span></a></li>
+          </ul>
+        </menu>
+    </nav>
+    </header>
+    <hr></hr>
+    <div class="content">
+    <div class="first_third">
+      <h2 id = "employer">Employer:</h2>
+      <p>Placeholder for Employer name(BYU)</p>
+      <p> In demand skills for this Company:</p>
+          <li>Coding</li>
+          <li>Programming</li>
+          <li>Css</li>
+      <h4> Select one of the Common Jobs at Employer location</h4>
+          <li id = "job">BYU Electrical Engineering Department</li>
+              <li>$salary</li>
+          <li>BYU Computer Engineering Department</li>
+              <li>$salary</li>
+          <li>BYU Cyber Security Department</li>
+              <li>$salary</li>
+    </div>
+        <div class="avatar">
+          <embed src="girl4.svg" width="300" height="380" embedborder="0" typle="img/svg+xml"/>
+        </div>
+    <div class="study_plan">
+      <p>Study plan</p>
+          <li>Freshman</li>
+          <li>Sophomore</li>
+          <li>Junior</li>
+          <li>Senior</li>
+          <hr></hr>
+    </div>
+      <div class="other_users">
+              <p>Friends Career results:</p>
+              <span class="place-holder-user">Unknown Friend</span>
+            <table>
+              <thead>
+                  <tr>
+                      <th>Result Number</th>
+                      <th>Name</th>
+                      <th>Career Result</th>
+                      <th>Time</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr id="friends_career_results">
+                      <td id="friends_career_results_attempt"></td>
+                      <td id="friends_career_results_name"></td>
+                      <td id="friends_career_results_job"></td>
+                      <td id="friends_career_results_time"></td>
+                  </tr>
+                  <!--<tr>
+                      <td>7</td>
+                      <td>Jim</td>
+                      <td>Taco Bell employee</td>
+                      <td>2pm</td>
+                  </tr>
+                  <tr>
+                      <td>5</td>
+                      <td>Joe</td>
+                      <td>Supreme leader</td>
+                      <td>3pm</td>
+                  </tr>-->
+              </tbody>
+          </table>
+            <hr></hr>
+      </div>
+      <div class="extra_controls">
+        <p>Flexibility</p>
+        <div class="slidecontainer">
+          <div class="slider_border">
+            <div class="slider_background">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+          </div>
+        </div>
+        <p>Pay/Hour</p>
+        <div class="slidecontainer">
+          <div class="slider_border">
+            <div class="slider_background">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+          </div>
+        </div>
+        <p>Transferability</p>
+        <div class="slidecontainer">
+          <div class="slider_border">
+            <div class="slider_background">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+          </div>
+        </div>
+        <div>
+      </div>
+        <form form method="get" action="career_machine.html">
+          <div class="restart_button"></div>
+            <button>Restart</button>
+        </div>
+        </form>
+      </div>
+    </div>
+      <footer>
+        <hr />
+        <span class="text-reset">Neal Smalley</span>
+        <br />
+        <a href="https://github.com/NealSmalley/startup">Career Machine on GitHub</a>
+      </footer>
+      <script src="results.js"></script>
+</body>
+</html>
