@@ -30,17 +30,17 @@ For this deliverable I will structure it using HTML.
 - 3rd party service - will be the job results from BYU employment website.
 - WebSocket - The user can show their job result with another user.(Done: placeholder for WebSocket)
 ## CSS deliverable
-- Header, footer, and content
-- Navigation elements - buttons and input boxes with borders.
-- Responsive to window resizing - The website will adjust from computer screens to phone screens.
-- Application elements - Well constructed visually.
-- Application text content - easy to read font.
-- Application images - Avatar image is well placed and given a border.
+- Header, footer, and content(completed)
+- Navigation elements - buttons and input boxes with borders.(completed)
+- Responsive to window resizing - The website will adjust from computer screens to phone screens.(completed)
+- Application elements - Well constructed visually.(completed)
+- Application text content - easy to read font.(completed)
+- Application images - Avatar image is well placed and given a border.(completed)
 ## JavaScript deliverable
-- Login - pressing login button will take you to information input page.
-- Database - This will recieve input results and contain all the potential job options.
-- WebSocket - WebSocket messages to share Job results.
-- Application logic - The job will change depending on the user's inputs.
+- Login - pressing login button will take you to information input page. This displays your name. Then the next page it displays the company you selected(completed)
+- Database - This will recieve input results and contain all the potential job options. I created a mock in the localstorage in an array called user_info.(completed)
+- WebSocket - WebSocket messages to share Job results. This is at the bottom right corner titled Friends Career results:(completed)
+- Application logic - The employer will change depending on the user's inputs.(completed)
 ## Service deliverable
 For this deliverable I will use backend endpoints to get the users inputs and return a job result.
 - Node.js/Express HTTP service

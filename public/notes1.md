@@ -1198,6 +1198,11 @@ async function cattleDrive() { return cow() }: returns cow promise
 async function cattleDrive() { return await cow() }: returns moo promise
 async function cattleDrive() { await cow() }: returns undefined promise
 
+Ryan Dahl: Creator of Node.js
+"You can never understand everything. But, you should push yourself to understand the system"
+NVM = Node version manager
+Node = JavaScript runtime
+NPM = Node package manager
 
-
+Sindre sorhus makes npm packages
 
