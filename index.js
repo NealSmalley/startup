@@ -14,6 +14,18 @@ app.use(express.static('public'));
 var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
+let attemptsCount = 0;
+
+app.post('/attempts', (_req, res) => {
+  attemptsCount++;
+  res.send(attemptsCount)
+});
+
+app.get('/attempts', (_req, res) => {
+  res.send(attemptsCount);
+});
+
+
 // GetScores
 apiRouter.get('/scores', (_req, res) => {
   res.send(scores);
