@@ -16,13 +16,13 @@ app.use(`/api`, apiRouter);
 
 let attemptsCount = 0;
 
-app.post('/attempts', (_req, res) => {
+apiRouter.post('/attempts', (_req, res) => {
   attemptsCount++;
-  res.send(attemptsCount)
+  res.send({attemptsCount})
 });
 
-app.get('/attempts', (_req, res) => {
-  res.send(attemptsCount);
+apiRouter.get('/attempts', (_req, res) => {
+  res.send({attemptsCount});
 });
 
 

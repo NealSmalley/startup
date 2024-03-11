@@ -1,4 +1,4 @@
-/*function  user_info() {
+function  user_info() {
   const employmentEl = document.getElementById("employment").addEventListener("click", function(event){
   const employmentElValue = document.getElementById("question").value
 
@@ -10,7 +10,7 @@
   window.location.href = "results.html"; 
   });
 }
-*/
+
 function login() {
     var x = localStorage.getItem("userName");
     document.getElementById("career_machine_question").innerHTML = "Where would you like to work " + x +"?";
@@ -29,7 +29,7 @@ function attempt() {
 
 
 attempt()
-//user_info()
+user_info()
 login();
 
 
