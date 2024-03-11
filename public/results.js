@@ -54,7 +54,7 @@ function job_results (data) {
         //containerEl.appendChild(authorEl);
       });
   }
-  
+
 function displayAttempts() {
     fetch('/api/attempts')
       .then(response => response.json())
@@ -62,14 +62,14 @@ function displayAttempts() {
         console.log('Total attempts:', data.attempts);
         // Display the attempts count in your HTML
         // For example, assuming you have an element with id="attemptsDisplay"
-        document.getElementById('attemptsDisplay').textContent = `Total attempts: ${data.attempts}`;
+        document.getElementById('attempts').textContent = `Total attempts: ${data.attempts}`;
       })
       .catch(error => console.error('Error:', error));
 }
   
   // Call displayAttempts() when you want to display the count, 
   // for example, on page load or after a new attempt submission.
-  displayAttempts();
+displayAttempts();
   
   
 job_results();
