@@ -1,4 +1,4 @@
-function  user_info() {
+/*function  user_info() {
   const employmentEl = document.getElementById("employment").addEventListener("click", function(event){
   const employmentElValue = document.getElementById("question").value
 
@@ -10,6 +10,7 @@ function  user_info() {
   window.location.href = "results.html"; 
   });
 }
+*/
 function login() {
     var x = localStorage.getItem("userName");
     document.getElementById("career_machine_question").innerHTML = "Where would you like to work " + x +"?";
@@ -17,18 +18,18 @@ function login() {
     const nameEl = document.querySelector("#question").value;
     console.log(nameEl);
   }
-
+function attempt() {
   document.getElementById('employment').addEventListener('click', () => {
     fetch('/api/attempts', { method: 'POST' })
       .then(response => response.json())
       .then(data => console.log('Attempt submitted:', data))
       .catch(error => console.error('Error:', error));
   });
-  
+}
 
 
-
-user_info()
+attempt()
+//user_info()
 login();
 
 
