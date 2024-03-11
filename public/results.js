@@ -59,10 +59,10 @@ function displayAttempts() {
     fetch('/api/attempts')
       .then(response => response.json())
       .then(data => {
-        console.log('Total attempts:', data.attempts);
+        console.log('Total attempts:', data.attemptsCount);
         // Display the attempts count in your HTML
         // For example, assuming you have an element with id="attemptsDisplay"
-        document.getElementById('attempts').textContent = `Total attempts: ${data.attempts}`;
+        document.getElementById('attempts').textContent = `Total attempts: ${data.attemptsCount}`;
       })
       .catch(error => console.error('Error:', error));
 }
