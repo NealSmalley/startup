@@ -43,9 +43,9 @@ For this deliverable I will structure it using HTML.
 - Application logic - The employer will change depending on the user's inputs.(completed)
 ## Service deliverable
 For this deliverable I will use backend endpoints to get the users inputs and return a job result.
-- Node.js/Express HTTP service
-- Backend service endpoints - Stores login of user on server.
-- Frontend calls service endpoints
+- Node.js/Express HTTP service (Done)
+- Backend service endpoints (Done) makes endpoints /api and /attempts and Counts number of attempts.
+- Frontend calls service endpoints(Done) The number of attempts changes and there is a random quote after the BYU Electrical Engineering Department bullet point.
 ## DB/Login deliverable
 - MongoDB Atlas database created
 - Stores data in MongoDB
