@@ -31,11 +31,16 @@
     </nav>
     </header>
     <hr />
-    <div class="center">
+    <div class="center" id="login_or_create">
         <label for="name">Name</label>
         <input type="text" id="name" placeholder="Your name here" />
-        <button type="submit" id="login">Login</button>
+        <input type="text" id="password" placeholder="Password" />
+        <button type="submit" id="login" onclick="loginUser()">Login</button>
+        <button type="submit" id="create" onclick="createUser()">Create</button>
     </div>
+    <div class="center2" id="logout">
+      <button type="submit" id="logout" onclick="logout()">Logout</button>
+  </div>
       <footer>
         <hr />
         <span class="text-reset">Neal Smalley</span>
