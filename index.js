@@ -1,11 +1,16 @@
-/*const express = require('express');
-const app = express();
+const express = require('express');
+const cookieParser = require('cookie-parser');
+const DB = require('./database.js');
+
+const app = express()
 
 // The service port. In production the front-end code is statically hosted by the service on the same port.
-const port = process.argv.length > 2 ? process.argv[2] : 3000;
+const port = process.argv.length > 2 ? process.argv[2] : 4000;
 
 // JSON body parsing using built-in middleware
 app.use(express.json());
+
+app.use(cookieParser());
 
 // Serve up the front-end static content hosting
 app.use(express.static('public'));
@@ -69,8 +74,8 @@ function updateScores(newScore, scores) {
 
   return scores;
 }
-*/
 
+/*
 const { MongoClient } = require('mongodb');
 const config = require('./dbConfig.json');
 
@@ -112,3 +117,52 @@ async function main() {
 }
 
 main().catch(console.error);
+*/
+
+// CreateAuth token for a new user
+apiRouter.post('/auth/create', async (req, res) => {
+  if (await DB.getUser(req.body.email)) {
+    res.status(409).send({ msg: 'Existing user' });
+  } else {
+    const user = await DB.createUser(req.body.email, req.body.password);
+
+    // Set the cookie
+    setAuthCookie(res, user.token);
+
+    res.send({
+      id: user._id,
+    });
+  }
+});
+
+function setAuthCookie(res, authToken) {
+  res.cookie('token', authToken, {
+    secure: true,
+    httpOnly: true,
+    sameSite: 'strict',
+  });
+}
+
+
+apiRouter.post('/auth/login', async (req, res) => {
+  const user = await DB.getUser(req.body.email);
+  console.log(user)
+  if (user) {
+    if (await bcrypt.compare(req.body.password, user.password)) {
+      setAuthCookie(res, user.token);
+      res.send({ id: user._id });
+      return;
+    }
+  }
+  res.status(401).send({ msg: 'Unauthorized' });
+});
+
+apiRouter.get('/user/me', async (req, res) => {
+  authToken = req.cookies['token'];
+  const user = await collection.findOne({ token: authToken });
+  if (user) {
+    res.send({ email: user.email });
+    return;
+  }
+  res.status(401).send({ msg: 'Unauthorized' });
+});
