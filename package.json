@@ -14,5 +14,8 @@
     "cookie-parser": "^1.4.6",
     "mongodb": "^6.5.0",
     "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30"
   }
 }
