@@ -47,12 +47,12 @@ For this deliverable I will use backend endpoints to get the users inputs and re
 - Backend service endpoints (Done) makes endpoints /api and /attempts and Counts number of attempts.
 - Frontend calls service endpoints(Done) The number of attempts changes and there is a random quote after the BYU Electrical Engineering Department bullet point.
 ## DB/Login deliverable
-- MongoDB Atlas database created
-- Stores data in MongoDB
-- User registration - Makes a new account in the database.
-- Existing user - Saves job result under the same user.
-- Use MongoDB to store credentials - Stores both user and their job results.
-- Restricts functionality - You cannot vote without being logged in.
+- MongoDB Atlas database created(Done)
+- Stores data in MongoDB (Done)
+- User registration - Makes a new account in the database.(Done)
+- Existing user - Are saved in database.(Done)
+- Use MongoDB to store credentials - Stores both user.(Done)
+- Restricts functionality - You cannot loggin without creating account.(Done)
 ## WebSocket deliverable
 - Backend listens for WebSocket connection
 - Frontend makes WebSocket connection
