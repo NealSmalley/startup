@@ -48,12 +48,25 @@
           <embed src="girl4.svg" width="300" height="380" embedborder="0" typle="img/svg+xml"/>
         </div>
     <div class="study_plan">
-      <p>Study plan</p>
+    <!--  <p>Study plan</p>
           <li>Freshman</li>
           <li>Sophomore</li>
           <li>Junior</li>
           <li>Senior</li>
-          <hr></hr>
+          <hr></hr>-->
+          <div class="name">
+            <fieldset id="name-controls">
+              <legend>My Name</legend>
+              <input id="my-name" type="text" />
+            </fieldset>
+          </div>
+      
+          <fieldset id="chat-controls" disabled>
+            <legend>Chat</legend>
+            <input id="new-msg" type="text" />
+            <button onclick="sendMessage()">Send</button>
+          </fieldset>
+          <div id="chat-text"></div>    
     </div>
       <div class="other_users">
               <p>Friends Career results:</p>
@@ -132,4 +145,5 @@
       </footer>
       <script src="results.js"></script>
 </body>
+  <script src="chatClient.js"></script>
 </html>
