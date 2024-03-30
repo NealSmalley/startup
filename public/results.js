@@ -15,25 +15,7 @@ setInterval(() => {
       `<div>${time}pm</div>` + chatText3.innerHTML;
   }, 5000);
 
-function login() {
-    var x = localStorage.getItem("user_info");
-    if (x) {
-        const userInfo = JSON.parse(x);
-        const y = userInfo.employer;
-        document.getElementById("employer").innerHTML = y;
-        console.log(x);
-    } else {
-        console.log("not found")
-    }
-    const employmentElValue = "engineer"
 
-    const storedUserInfoString = localStorage.getItem("user_info");
-    const user_info = storedUserInfoString ? JSON.parse(storedUserInfoString) : {};
-    user_info.job = employmentElValue; 
-    const updatedUserInfoString = JSON.stringify(user_info);
-    localStorage.setItem("user_info", updatedUserInfoString);
-    
-  }
 
 function job_results (data) {
     fetch('https://api.quotable.io/random')
@@ -74,4 +56,38 @@ displayAttempts();
   
 job_results();
 
-login();
+async function login() {
+  var x = localStorage.getItem("user_info");
+  if (x) {
+      const userInfo = JSON.parse(x);
+      const y = userInfo.employer;
+      document.getElementById("employer").innerHTML = y;
+      console.log(x);
+      const response = await fetch('/api/employer', {
+        method: 'POST',
+        headers: {'content-type': 'application/json'},
+        body: JSON.stringify({employer: y}),
+      });
+      if (response.ok) {
+        console.log('success')
+      }
+      else {
+        console.log('fail')
+      }
+  } else {
+      console.log("not found")
+  }
+  const employmentElValue = "engineer"
+
+  const storedUserInfoString = localStorage.getItem("user_info");
+  const user_info = storedUserInfoString ? JSON.parse(storedUserInfoString) : {};
+  user_info.job = employmentElValue; 
+  const updatedUserInfoString = JSON.stringify(user_info);
+  localStorage.setItem("user_info", updatedUserInfoString);
+  
+}
+login().then(()=>{
+  console.log("success");
+}).catch((error) => {
+  console.log("fail", error);
+});
