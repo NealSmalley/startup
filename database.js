@@ -22,6 +22,7 @@ const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostna
 const client = new MongoClient(url);
 const db = client.db('Start');
 const userCollection = db.collection('user');
+const employerCollection = db.collection('employer');
 
 (async function testConnection() {
   await client.connect();
@@ -31,11 +32,15 @@ const userCollection = db.collection('user');
   process.exit(1);
 });
 
+function getUserByToken(token) {
+  return userCollection.findOne({ token: token})
+}
 
 
 
-
-
+function addEmployer(employer) {
+  employerCollection.insertOne(employer);
+}
 
 function getUser(email) {
   console.log(email);
@@ -50,5 +55,5 @@ async function createUser(email, password) {
   return user;
 }
 module.exports = {
-  getUser, createUser, 
+  getUser, createUser, addEmployer, getUserByToken
 };
