@@ -1,9 +1,12 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const DB = require('./database.js');
+const bcrypt = require('bcrypt');
 const { WebSocketServer } = require('ws');
 
 const app = express();
+
+const authCookieName = 'token';
 
 // The service port. In production the front-end code is statically hosted by the service on the same port.
 const port = process.argv.length > 2 ? process.argv[2] : 4000;
@@ -18,6 +21,8 @@ app.use(express.static('public'));
 
 // Router for service endpoints
 var apiRouter = express.Router();
+var SecureapiRouter = express.Router();
+apiRouter.use(SecureapiRouter);
 app.use(`/api`, apiRouter);
 
 let attemptsCount = 0;
@@ -167,6 +172,26 @@ apiRouter.get('/user/me', async (req, res) => {
   }
   res.status(401).send({ msg: 'Unauthorized' });
 });
+
+SecureapiRouter.use(async(req, res, next) => {
+  authToken = req.cookies[authCookieName];
+  const user = await DB.getUserByToken(authToken);
+  if (user) {
+    next();
+  } else {
+    res.status(401).send({ msg: 'Unauthorized' });
+  }
+});
+
+SecureapiRouter.post('/employer', async (req, res) => {
+    const employer = {...req.body,ip: req.ip};
+    await DB.addEmployer(employer);
+    res.send({ employer: employer });
+});
+
+
+
+
 
 const wss = new WebSocketServer({ noServer: true });
 
