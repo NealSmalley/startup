@@ -54,10 +54,10 @@ For this deliverable I will use backend endpoints to get the users inputs and re
 - Use MongoDB to store credentials - Stores both user.(Done)
 - Restricts functionality - You cannot loggin without creating account.(Done)
 ## WebSocket deliverable
-- Backend listens for WebSocket connection
-- Frontend makes WebSocket connection
-- Data sent over WebSocket connection
-- WebSocket data displayed - Job result can be shared with any user.
+- Backend listens for WebSocket connection(done)
+- Frontend makes WebSocket connection(done)
+- Data sent over WebSocket connection(done)
+- WebSocket data displayed - Discuss with other uses your experience using the chat.
 ## React deliverable
 - Bundle and transpiled
 - Components - login and input information.
