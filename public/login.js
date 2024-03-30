@@ -48,6 +48,10 @@ async function loginOrCreate(endpoint) {
     window.location.href = 'career_machine.html';
   } else {
     const body = await response.json();
+    //const modalEl = document.querySelector('#msgModal');
+    //modalEl.querySelector('.modal-body').textContent = `⚠ Error: ${body.msg}`;
+    //const msgModal = new bootstrap.Modal(modalEl, {});
+    //msgModal.show();
   }
 }
 /*
