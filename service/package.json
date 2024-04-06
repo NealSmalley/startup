@@ -1,0 +1,22 @@
+{
+  "name": "startup",
+  "version": "1.0.0",
+  "description": "Have you ever been searching for a job, but you don't know what would be best suited for your schedule, life style or major? Well this Job Configurator is created to address this problem. The user puts in their major, prefered hours and interests and the application will give the result that is best suited for the user. ## Design ![Avatars](https://github.com/NealSmalley/startup/assets/54277322/f42531ba-e8b5-482a-9e77-50cb77b2c4fb) ## Key features - login over HTTPS - The ability to input information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "mongodb": "^6.5.0",
+    "uuid": "^9.0.1",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30"
+  }
+}

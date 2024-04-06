@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../simon-websocket"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../simon-login"
+		}
+	],
+	"settings": {}
+}
