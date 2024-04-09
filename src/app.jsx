@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
-import { Login } from './login/login';
+import  Login  from './login/login';
 import { Career_machine } from './career_machine/career_machine';
 import { Results } from './results/results';
 
@@ -30,7 +30,7 @@ export default function App() {
             </nav>
         </header>
 
-        <main>App components go here</main>
+        <main></main>
         <Routes>
             <Route path='/' element={<Login />} exact />
             <Route path='/career_machine' element={<Career_machine />} exact />
