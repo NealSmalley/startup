@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
@@ -10,7 +10,7 @@ import { Results } from './results/results';
 export default function App() {
   return (
     <BrowserRouter>
-        <div>
+        <div className="body">
         <header>
             <nav>
                 <menu>
@@ -18,19 +18,17 @@ export default function App() {
                         <li>
                         <div className="logo">
                             <NavLink>
-                                <embed src="logo_cleaned.svg" width="300" height="180" embedborder="0" typle="img/svg+xml"/>
+                                <embed src="../logo_cleaned.svg" width="300" height="180" embedborder="0" typle="img/svg+xml"/>
                             </NavLink>
                         </div>
                         </li>
-                        <li><NavLink to=''><span className="underline">Home</span></NavLink></li>
-                    <li><NavLink to='career_machine'><span className="underline">Career Machine</span></NavLink></li>
-                    <li><NavLink to='results'><span className="underline">Results</span></NavLink></li>
+                        <li><NavLink to=''><span>Home</span></NavLink></li>
+                    <li><NavLink to='career_machine'><span>Career Machine</span></NavLink></li>
+                    <li><NavLink to='results'><span>Results</span></NavLink></li>
                     </ul>
                 </menu>
             </nav>
         </header>
-
-        <main></main>
         <Routes>
             <Route path='/' element={<Login />} exact />
             <Route path='/career_machine' element={<Career_machine />} exact />
