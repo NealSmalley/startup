@@ -59,6 +59,6 @@ For this deliverable I will use backend endpoints to get the users inputs and re
 - Data sent over WebSocket connection(done)
 - WebSocket data displayed - Discuss with other uses your experience using the chat.
 ## React deliverable
-- Bundle and transpiled
-- Components - login and input information.
-- Router - Between loging and input information components.
+- Bundle and transpiled(done)
+- Components - login and input information.(done)
+- Router - Between loging and input information components.(done)
